@@ -1,0 +1,36 @@
+{{> header}}
+
+<div class="container">
+    <div class="about-us">
+
+        <p>
+            {{#if isAuth}}
+        <div class="shoes">
+            {{#each shoes}}
+            <div class="shoe">
+                <img width="150" src="{{imageUrl}}">
+                <h3>{{name}}</h3>
+                <a href="#/details/{{id}}">Buy it for ${{price}}</a>
+            </div>
+            {{else}}
+            <h1>No shoes to display. Be the first to create a new offer...</h3>
+            {{/each}}
+        </div>
+        {{else}}
+        <div>
+            <img width="800" src="../public/shoes.jpg" alt="Shoe">
+            <img width="600" src="../public/shoes2.jpg" alt="Shoe">
+        </div>
+        <a href="#/register">Register Now</a> and Try it!
+        {{/if}}
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+{{> footer}}
