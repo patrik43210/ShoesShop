@@ -2,8 +2,6 @@
 
 <div class="container">
     <div class="about-us">
-
-        <p>
             {{#if isAuth}}
         <div class="shoes">
             {{#each shoes}}
@@ -21,16 +19,12 @@
             <img width="800" src="../public/shoes.jpg" alt="Shoe">
             <img width="600" src="../public/shoes2.jpg" alt="Shoe">
         </div>
+        <p class="reg">
         <a href="#/register">Register Now</a> and Try it!
-        {{/if}}
         </p>
+        {{/if}}
     </div>
 </div>
-
-
-
-
-
 
 
 {{> footer}}

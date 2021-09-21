@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap");
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Red-Hat Text', sans-serif;
+    font-family: "Red-Hat Text", sans-serif;
 }
 
 :root {
     --main-blue: #234465;
-    --main-orange: #FFA000;
+    --main-orange: #ffa000;
 }
 
 header {
@@ -92,7 +92,8 @@ form {
     text-align: center;
 }
 
-form div input, label {
+form div input,
+label {
     margin: 0 auto;
     color: var(--main-blue);
     text-align: center;
@@ -219,6 +220,18 @@ main .about-us div img {
     vertical-align: top;
 }
 
+.reg {
+    text-align: center;
+    padding: 15px;
+    color: blue;
+}
+
+.reg a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffa000;
+}
+
 main .about-us h1 {
     text-align: left;
     color: var(--main-blue);
@@ -236,19 +249,22 @@ main .container {
     background-color: white;
 }
 
-main .container p, .form-info {
+main .container p,
+.form-info {
     text-align: center;
     color: var(--main-blue);
 }
 
-main .container p a, .form-info a {
+main .container p a,
+.form-info a {
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
     color: var(--main-orange);
 }
 
-main .container p a:hover, .form-info a {
+main .container p a:hover,
+.form-info a {
     text-decoration: none;
 }
 
@@ -291,7 +307,7 @@ form div button {
     font-size: 32px;
 }
 
-span{
+span {
     color: var(--main-orange);
 }
 
