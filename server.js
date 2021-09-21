@@ -41,4 +41,10 @@ const app = Sammy("body", function () {
   this.get("#/buy/:id", buy);
 });
 
+var http = require("http");
+var PORT = process.env.PORT || 8080;
+var server = http.Server(app);
+
+server.listen(PORT, {});
+
 app.run("#/home");
